@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Masala 2</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .all{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputs{
+            background-color: bisque;
+            border-radius: 5px;
+            border-color: rgb(81, 255, 0);
+            margin: 10px;
+            padding: 10px;
+            height: 30px;
+            width: 200px;
+            font-size: 16px;
+        }
+        button{
+            background-color: aqua;
+            border-radius: 15px;
+            color: brown;
+            font-weight: 600;
+            width: 130px;
+            padding: 5px;
+        }
+        #result{
+            background-color: antiquewhite;
+            min-height: 200px;
+            max-width: 500px;
+            padding: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <input required name="name" class="inputs" type="text" id="personName" placeholder="Person name">Example for date - "yy-mm-dd"
+        <input required name="date" class="inputs" type="text" id="birthDay" placeholder="Birthday">
+        <input required name="date" class="inputs" type="text" id="death" placeholder="date of death">
+        <button type="submit" onclick="findOldPerson()">PRESS ME to ADD user info</button>
+        <button type="submit" onclick="oldestperson()">FIND OLDEST PERSON</button>
+    </div>
+    <div id="result">Here will be shown added people</div>
+    <script src="./masala2.js"></script>    
+</body>
+</html>
